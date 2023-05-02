@@ -4,6 +4,7 @@ UserInputService.MouseBehavior = Enum.MouseBehavior.LockCenter
 for i,v in pairs(game:GetService("CoreGui"):GetChildren()) do
     v:Destroy()
     end
+end
 
 game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Anchored = true
 
