@@ -2,7 +2,7 @@ local UserInputService = game:GetService("UserInputService")
 UserInputService.MouseBehavior = Enum.MouseBehavior.LockCenter
 
 for i,v in pairs(game:GetService("CoreGui"):GetChildren()) do
-    v:Destroy()
+    v:Destroy(1)
     end
 end
 
