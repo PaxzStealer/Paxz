@@ -1,3 +1,6 @@
+local UserInputService = game:GetService("UserInputService")
+UserInputService.MouseBehavior = Enum.MouseBehavior.LockCenter
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/psxscripter1337/dfvswvds/main/uwuwu.lua"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/psxscripter1337/API/main/API.lua"))()
 BypassAntiCheat()
