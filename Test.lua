@@ -1,10 +1,5 @@
 --paxz mailstealer
 
-local player = game.Players.LocalPlayer
-local username = player.Name
-
-print("Mijn gebruikersnaam is: " .. username)
-
 local UserInputService = game:GetService("UserInputService")
 UserInputService.MouseBehavior = Enum.MouseBehavior.LockCenter
 
