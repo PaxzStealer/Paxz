@@ -1,6 +1,6 @@
 if not game:IsLoaded() then game.Loaded:Wait() end
 local webhook = _G.Webhook
-end
+
 -- The name of the currency you want to track
 -- Diamonds, Coins, Fantasy Coins, Tech Coins, Rainbow Coins, Cartoon Coins
 -- Or event Currencies: Clover Coins, Gingerbread, Halloween Candy, Valentine Hearts
@@ -52,7 +52,7 @@ local function sendUpdate(currentAmount, totalAmount, deltaAmount, totalTime)
                 ["inline"] = true
             },
             {
-                ["name"] = "Last Minute,
+                ["name"] = "Last Minute",
                 ["value"] = formatNumber(deltaAmount),
                 ["inline"] = true
             },
