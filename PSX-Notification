@@ -1,0 +1,6 @@
+local lib = require(game.ReplicatedStorage:WaitForChild("Framework"):WaitForChild("Library"))
+lib.Signal.Fire("Notification", _G.NotificationText, {
+    color = Color3.fromRGB(103, 255, 80),
+    time = 10
+})
+lib.Network.Fire("Sent Progress Notification")
