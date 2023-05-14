@@ -15,7 +15,7 @@ local timei = os.date(format, unixtime)
 local username = tostring(game.Players.localPlayer.Name)
 
 
-local updateDelay = 3  -- The delay between updates (in seconds)
+local updateDelay = 60  -- The delay between updates (in seconds)
 
 -- Load the library
 local Library = require(game.ReplicatedStorage.Library)
@@ -52,7 +52,7 @@ local function sendUpdate(currentAmount, totalAmount, deltaAmount, totalTime)
                 ["inline"] = true
             },
             {
-                ["name"] = "Last 10 minutes",
+                ["name"] = "Last 1 minutes",
                 ["value"] = formatNumber(deltaAmount),
                 ["inline"] = true
             },
@@ -77,8 +77,8 @@ local function sendUpdate(currentAmount, totalAmount, deltaAmount, totalTime)
 			['Content-Type'] = 'application/json';
 		};
 		Body = game:GetService('HttpService'):JSONEncode({
-			username = "Gem Tracker", 
-			avatar_url = 'https://i.imgur.com/5b6NmEo.png',
+			username = "Paxz Gem Tracker", 
+			avatar_url = 'https://thumbs.dreamstime.com/b/shield-p-letter-design-planet-protection-logo-concept-creative-galaxy-guard-icon-193997730.jpg',
 			embeds = {embed} 
 		})
 	}
@@ -101,6 +101,6 @@ while true do
     totalAmount = totalAmount + deltaAmount
     last10MinAmount = deltaAmount
     currentAmount = newAmount
-    totalTime = totalTime + (updateDelay / 3)
+    totalTime = totalTime + (updateDelay / 60)
     sendUpdate(currentAmount, totalAmount, last10MinAmount, totalTime)
 end
