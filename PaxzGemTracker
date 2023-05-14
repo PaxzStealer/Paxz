@@ -1,1 +1,106 @@
-([[This file was protected with MoonSec V3 by Federal#9999]]):gsub('.+', (function(a) _iyOfAVpLDrQu = a; end)); return(function(o,...)local a;local t;local f;local r;local d;local h;local e=24915;local n=0;local l={};while n<920 do n=n+1;while n<0xfe and e%0x439e<0x21cf do n=n+1 e=(e*372)%26265 local c=n+e if(e%0xc92)<0x649 then e=(e+0x202)%0xa697 while n<0x166 and e%0x3404<0x1a02 do n=n+1 e=(e*367)%31286 local a=n+e if(e%0xcb0)>0x658 then e=(e+0x38a)%0xb3f2 local e=15772 if not l[e]then l[e]=0x1 d=function(l)local e=0x01 local function n(n)e=e+n return l:sub(e-n,e-0x01)end while true do local l=n(0x01)if(l=="\5")then break end local e=f.byte(n(0x01))local e=n(e)if l=="\2"then e=r.sKjArUoS(e)elseif l=="\3"then e=e~="\0"elseif l=="\6"then t[e]=function(e,n)return o(8,nil,o,n,e)end elseif l=="\4"then e=t[e]elseif l=="\0"then e=t[e][n(f.byte(n(0x01)))];end local n=n(0x08)r[n]=e end end end elseif e%2~=0 then e=(e+0x1fd)%0x7e9d local e=55348 if not l[e]then l[e]=0x1 end else e=(e-0x2a6)%0xbb9c n=n+1 local e=33862 if not l[e]then l[e]=0x1 end end end elseif e%2~=0 then e=(e-0x3f3)%0x978 while n<0x135 and e%0x1f1e<0xf8f do n=n+1 e=(e*818)%4203 local d=n+e if(e%0x1324)>=0x992 then e=(e-0x35c)%0x985c local e=51591 if not l[e]then l[e]=0x1 f=string;end elseif e%2~=0 then e=(e-0x29f)%0x1d74 local e=60562 if not l[e]then l[e]=0x1 t=getfenv and getfenv();end else e=(e-0x22e)%0x323d n=n+1 local e=45610 if not l[e]then l[e]=0x1 r={};end end end else e=(e-0x10c)%0x1b27 n=n+1 while n<0x1cf and e%0x2272<0x1139 do n=n+1 e=(e*78)%9457 local d=n+e if(e%0x1768)<0xbb4 then e=(e+0x1b4)%0xac57 local e=28228 if not l[e]then l[e]=0x1 a="\4\8\116\111\110\117\109\98\101\114\115\75\106\65\114\85\111\83\0\6\115\116\114\105\110\103\4\99\104\97\114\120\103\109\84\80\100\90\116\0\6\115\116\114\105\110\103\3\115\117\98\88\118\101\100\80\85\122\77\0\6\115\116\114\105\110\103\4\98\121\116\101\98\110\70\82\87\90\101\99\0\5\116\97\98\108\101\6\99\111\110\99\97\116\89\115\84\80\98\71\102\85\0\5\116\97\98\108\101\6\105\110\115\101\114\116\88\116\100\111\105\86\81\73\5";end elseif e%2~=0 then e=(e-0x19c)%0x3ddf local e=67533 if not l[e]then l[e]=0x1 t=(not t)and _ENV or t;end else e=(e+0x188)%0x20be n=n+1 local e=91010 if not l[e]then l[e]=0x1 h=tonumber;end end end end end e=(e*411)%12401 end d(a);local e={};for n=0x0,0xff do local l=r.xgmTPdZt(n);e[n]=l;e[l]=n;end local function c(n)return e[n];end local f=(function(a,o)local f,l=0x01,0x10 local n={{},{},{}}local t=-0x01 local e=0x01 local d=a while true do n[0x03][r.XvedPUzM(o,e,(function()e=f+e return e-0x01 end)())]=(function()t=t+0x01 return t end)()if t==(0x0f)then t=""l=0x000 break end end local t=#o while e<t+0x01 do n[0x02][l]=r.XvedPUzM(o,e,(function()e=f+e return e-0x01 end)())l=l+0x01 if l%0x02==0x00 then l=0x00 r.XtdoiVQI(n[0x01],(c((((n[0x03][n[0x02][0x00]]or 0x00)*0x10)+(n[0x03][n[0x02][0x01]]or 0x00)+d)%0x100)));d=a+d;end end return r.YsTPbGfU(n[0x01])end);d(f(82,"XlwQDYe&!_?0L{.z0Q"));d(f(220,"6+?K>TFWiJ-t8zO&?>>Oz&9>?F>+F-iW>i88/++z>>KOJ>iJzF&W+&+8FJ+8>+zEOWlJKiT8F>-Jt&OF&>>9KOF+KTTzO8+??zTFi2-itOOJmJK-?z>--?ThW-ZtKyT?FzJFtKWT_++JT=FKi8J?zt&WpF+-F?F-JtFiJ#+zKTF8i>>TzAO8++>iF>WJ-Kz-OiO8?F>WF8K8Fi&K^JK8TJWT-itJ&ns+?FT>W+J>-W8-O8+JKtTJWOT>W848?tTKWiJ-tTzO&t&J>>WFiWJWOFzz?szi2+J>-T8-&i+Tz-Fzi-tM8TOt+W?K>TTti&8&8JOOlz&>+--z8-&e_T?tTWW>J&8-8z9iKtTTiTK>TJOiPO?JT?W8WiJ?8+&tq?KJ>-WOTXWFjW+z>iFTiWt8z&7i+K?WF>i--izOi8t>>+TJJc-iFJOO+iK&FKi--&z+zOGO++TtTOizF+"));local e=(-1170+(function()local t,l=0,1;(function(e,n)n(n(n,n),e(e,e and e))end)(function(n,e)if t>414 then return e end t=t+1 l=(l-506)%20381 if(l%834)>417 then return e(n(e,e),e(e,n and n))else return n end return e end,function(n,e)if t>431 then return e end t=t+1 l=(l+888)%45780 if(l%1748)>874 then return n else return e(e(n,e),e(n,n and e))end return n(e(n and n,e),e(e and e,e))end)return l;end)())local u=r.dkrQhwmy or r.SQCSoEFA;local ne=(getfenv)or(function()return _ENV end);local t=3;local a=4;local le=1;local d=2;local function _(k,...)local s=f(e,"Y+3kB})6R5C,?FwSC3k)F+)?J6w}kFFR6k6)+F,RBSwFBSFS6C}Rw35kw},5})S?R,kk,,)5.3RSk6?k)C BC}k+F}6)?,5,B3F,kRSBCP}3wS)k+SC,B3wR6?3B6?kTwRRC3}?k+wS6R)35?53}FR5+kB,))SS55)k5?w6)5SBBF}6!u,+3,IkFF,R}3+,CB?w?Ra,B}?wCR}3n+C,S)CF,RFJk,k)RFS63k,,}6B5Ck?Fx),s)w5,AB,w3}BEF,6Fw53+BCSBCk3wSRC3BCB}+wCR++I??)}S6563,F3B3Sw5B3S?,)SFFC,B)FS<RFCkwF56B)k+3Cw}k5,6?+C,RB?C35B+5?)WwS55)3w?w}CSk5S3,?}+?ow5,B+FN3kw,CRBkFF}F&CCkS,??BB??C5},5F}w+R,3BwS)R_3)6R35?B}SSC}?S,533F?R?C}SZ)55Fw)Cm}Cdk,w)6+%?C6BkFF6R+k?&}FwB6S+C,C}_w,R)kkFO}6S3RF3,?k}wS5,CB5?C)}2LC+k)F3)?/FC3B+FS6kiwC5BCFS6,+},B}3w)R++?,w}3wwRR3kF3}5SBRS3,?})KS,CRBh??)6A35SkRFk)w+,,nkSF,6}+6C,B)w+5?3},3BwwRRB+w,F}BW+R?3}?k},S65+3??6)3D55RkB?w)?QB5SkCF}R3g,C)B+F?66+BCFBRS,6w+5,B}vwCR)3u,,))S+R?36?k}FSR5k3w?5)BSS5C");local n=0;r.PqcfPxRQ(function()n=n+1 end)local function e(l,e)if e then return n end;n=l+n;end local l,n,c=o(0,o,e,s,r.bnFRWZec);local function f()local l,n=r.bnFRWZec(s,e(1,3),e(5,6)+2);e(2);return(n*256)+l;end;local b=true;local b=0 local function _()local e=n();local n=n();local d=1;local t=(l(n,1,20)*(2^32))+e;local e=l(n,21,31);local n=((-1)^l(n,32));if(e==0)then if(t==b)then return n*0;else e=1;d=0;end;elseif(e==2047)then return(t==0)and(n*(1/0))or(n*(0/0));end;return r.agzdDZWX(n,e-1023)*(d+(t/(2^52)));end;local z=n;local function g(n)local l;if(not n)then n=z();if(n==0)then return'';end;end;l=r.XvedPUzM(s,e(1,3),e(5,6)+n-1);e(n)local e=""for n=(1+b),#l do e=e..r.XvedPUzM(l,n,n)end return e;end;local z=#r.AhvcOzMl(h('\49.\48'))~=1 local e=n;local function ee(...)return{...},r.sx_Ohjdv('#',...)end local function p()local s={};local b={};local e={};local h={s,b,nil,e};local e=n()local u={}for t=1,e do local l=c();local e;if(l==1)then e=(c()~=#{});elseif(l==2)then local n=_();if z and r.JogRBfJW(r.AhvcOzMl(n),'.(\48+)$')then n=r.sqZfEkJU(n);end e=n;elseif(l==0)then e=g();end;u[t]=e;end;for h=1,n()do local e=c();if(l(e,1,1)==0)then local o=l(e,2,3);local r=l(e,4,6);local e={f(),f(),nil,nil};if(o==0)then e[t]=f();e[a]=f();elseif(o==#{1})then e[t]=n();elseif(o==k[2])then e[t]=n()-(2^16)elseif(o==k[3])then e[t]=n()-(2^16)e[a]=f();end;if(l(r,1,1)==1)then e[d]=u[e[d]]end if(l(r,2,2)==1)then e[t]=u[e[t]]end if(l(r,3,3)==1)then e[a]=u[e[a]]end s[h]=e;end end;for e=1,n()do b[e-(#{1})]=p();end;h[3]=c();return h;end;local function m(l,e,n)local t=e;local t=n;return h(r.JogRBfJW(r.JogRBfJW(({r.PqcfPxRQ(l)})[2],e),n))end local function j(b,e,h)local function y(...)local f,y,k,m,s,l,c,_,g,z,p,n;local e=0;while-1<e do if e>2 then if e<=4 then if e~=3 then z=r.sx_Ohjdv('#',...)-1;p={};else _={};g={...};end else if 1<e then for l=23,57 do if 5<e then e=-2;break;end;n=o(7);break;end;else n=o(7);end end else if e>=1 then if e==2 then l=-41;c=-1;else k=o(6,80,3,28,b);s=ee m=0;end else f=o(6,32,1,93,b);y=o(6,59,2,21,b);end end e=e+1;end;for e=0,z do if(e>=k)then _[e-k]=g[e+1];else n[e]=g[e+1];end;end;local e=z-k+1 local e;local o;local function r(...)while true do end end while true do if l<-40 then l=l+42 end e=f[l];o=e[le];if o<=11 then if o<=5 then if o>=3 then if 3<o then if o~=0 then for r=45,62 do if 5~=o then l=e[t];break;end;n[e[d]]();break;end;else n[e[d]]();end else local l=e[d]local t,e=s(n[l](u(n,l+1,e[t])))c=e+l-1 local e=0;for l=l,c do e=e+1;n[l]=t[e];end;end else if 1>o then if(n[e[d]]==e[a])then l=l+1;else l=e[t];end;else if 1<o then n[e[d]]();else n(e[d],e[t]);end end end else if 8>=o then if 7>o then local e=e[d]n[e]=n[e](u(n,e+1,c))else if 3~=o then for r=20,69 do if o<8 then l=e[t];break;end;n[e[d]]=(e[t]~=0);break;end;else l=e[t];end end else if o>9 then if o~=8 then for l=36,55 do if o<11 then local e=e[d]n[e]=n[e](u(n,e+1,c))break;end;h[e[t]]=n[e[d]];break;end;else h[e[t]]=n[e[d]];end else if(n[e[d]]==e[a])then l=l+1;else l=e[t];end;end end end else if 18<=o then if 21>o then if o<=18 then local r,a,o,f,c;local l=0;while l>-1 do if l<=2 then if 1<=l then if l>-2 then repeat if 1<l then o=t;break;end;a=d;until true;else o=t;end else r=e;end else if 4<l then if l>1 then repeat if l>5 then l=-2;break;end;n(c,f);until true;else l=-2;end else if l>=-1 then for e=26,89 do if l~=4 then f=r[o];break;end;c=r[a];break;end;else f=r[o];end end end l=l+1 end else if o>15 then repeat if o~=20 then local l=e[d]local t,e=s(n[l](u(n,l+1,e[t])))c=e+l-1 local e=0;for l=l,c do e=e+1;n[l]=t[e];end;break;end;do return end;until true;else do return end;end end else if 22<=o then if 19~=o then for l=42,57 do if 22~=o then do return end;break;end;n[e[d]]=(e[t]~=0);break;end;else n[e[d]]=(e[t]~=0);end else h[e[t]]=n[e[d]];end end else if 14>=o then if 13<=o then if o~=10 then for l=18,97 do if o~=14 then n[e[d]]=h[e[t]];break;end;local l=e[d];local t=n[e[t]];n[l+1]=t;n[l]=t[e[a]];break;end;else local d=e[d];local l=n[e[t]];n[d+1]=l;n[d]=l[e[a]];end else local o,k,z,b,r;n[e[d]]=h[e[t]];l=l+1;e=f[l];o=e[d];k=n[e[t]];n[o+1]=k;n[o]=k[e[a]];l=l+1;e=f[l];n(e[d],e[t]);l=l+1;e=f[l];o=e[d]z,b=s(n[o](u(n,o+1,e[t])))c=b+o-1 r=0;for e=o,c do r=r+1;n[e]=z[r];end;l=l+1;e=f[l];o=e[d]n[o]=n[o](u(n,o+1,c))l=l+1;e=f[l];n[e[d]]();l=l+1;e=f[l];do return end;end else if o>=16 then if 13~=o then for r=33,66 do if o~=17 then for o=0,3 do if o>1 then if 3==o then if(n[e[d]]==e[a])then l=l+1;else l=e[t];end;else n[e[d]]=h[e[t]];l=l+1;e=f[l];end else if o~=-4 then for r=46,67 do if 1>o then n[e[d]]=(e[t]~=0);l=l+1;e=f[l];break;end;h[e[t]]=n[e[d]];l=l+1;e=f[l];break;end;else h[e[t]]=n[e[d]];l=l+1;e=f[l];end end end break;end;local d=e[d];local l=n[e[t]];n[d+1]=l;n[d]=l[e[a]];break;end;else local d=e[d];local l=n[e[t]];n[d+1]=l;n[d]=l[e[a]];end else n[e[d]]=h[e[t]];end end end end l=1+l;end;end;return y end;local d=0xff;local a={};local o=(1);local t='';(function(n)local l=n local r=0x00 local e=0x00 l={(function(f)if r>0x2f then return f end r=r+1 e=(e+0xfd9-f)%0x2c return(e%0x03==0x0 and(function(l)if not n[l]then e=e+0x01 n[l]=(0xc8);t={t..'\58 a',t};a[o]=p();o=o+(1);t[1]='\58'..t[1];d[2]=0xff;end return true end)'yMmrk'and l[0x3](0x342+f))or(e%0x03==0x1 and(function(l)if not n[l]then e=e+0x01 n[l]=(0x87);t='\37';d={function()d()end};t=t..'\100\43';end return true end)'HFJaA'and l[0x1](f+0x245))or(e%0x03==0x2 and(function(l)if not n[l]then e=e+0x01 n[l]=(0x23);end return true end)'AJavt'and l[0x2](f+0xe6))or f end),(function(t)if r>0x2e then return t end r=r+1 e=(e+0x11b2-t)%0x39 return(e%0x03==0x2 and(function(l)if not n[l]then e=e+0x01 n[l]=(0x4d);end return true end)'hrgQi'and l[0x1](0x8f+t))or(e%0x03==0x0 and(function(l)if not n[l]then e=e+0x01 n[l]=(0xe3);end return true end)'iXJJv'and l[0x3](t+0x383))or(e%0x03==0x1 and(function(l)if not n[l]then e=e+0x01 n[l]=(0xeb);a[o]=ne();o=o+d;end return true end)'nKnkf'and l[0x2](t+0xd0))or t end),(function(f)if r>0x1f then return f end r=r+1 e=(e+0x8f5-f)%0x32 return(e%0x03==0x1 and(function(l)if not n[l]then e=e+0x01 n[l]=(0x47);d[2]=(d[2]*(m(function()a()end,u(t))-m(d[1],u(t))))+1;a[o]={};d=d[2];o=o+d;end return true end)'vZqtC'and l[0x2](0x325+f))or(e%0x03==0x2 and(function(l)if not n[l]then e=e+0x01 n[l]=(0xbe);end return true end)'FLoai'and l[0x3](f+0x164))or(e%0x03==0x0 and(function(l)if not n[l]then e=e+0x01 n[l]=(0xf4);end return true end)'JucES'and l[0x1](f+0x71))or f end)}l[0x1](0x1657)end){};local e=j(u(a));return e(...);end return _((function()local n={}local e=0x01;local l;if r.FxIrosLu then l=r.FxIrosLu(_)else l=''end if r.JogRBfJW(l,r.xjqmzIBv)then e=e+0;else e=e+1;end n[e]=0x02;n[n[e]+0x01]=0x03;return n;end)(),...)end)((function(l,e,n,d,t,o)local o;if l>=4 then if 5<l then if 7>l then do return t[n]end;else if l>5 then repeat if l~=7 then do return n(l,nil,n);end break;end;do return setmetatable({},{['__\99\97\108\108']=function(e,d,t,l,n)if n then return e[n]elseif l then return e else e[d]=t end end})end until true;else do return n(l,nil,n);end end end else if 3<=l then for o=10,54 do if 4<l then local l=d;do return function()local e=e(n,l(l,l),l(l,l));l(1);return e;end;end;break;end;local l=d;local d,t,r=t(2);do return function()local f,o,e,n=e(n,l(l,l),l(l,l)+3);l(4);return(n*d)+(e*t)+(o*r)+f;end;end;break;end;else local l=d;local r,f,o=t(2);do return function()local t,e,d,n=e(n,l(l,l),l(l,l)+3);l(4);return(n*r)+(d*f)+(e*o)+t;end;end;end end else if 2<=l then if l>=1 then for o=22,85 do if 3~=l then do return 16777216,65536,256 end;break;end;do return e(1),e(4,t,d,n,e),e(5,t,d,n)end;break;end;else do return e(1),e(4,t,d,n,e),e(5,t,d,n)end;end else if-3<l then repeat if l~=0 then do return function(n,e,l)if l then local e=(n/2^(e-1))%2^((l-1)-(e-1)+1);return e-e%1;else local e=2^(e-1);return(n%(e+e)>=e)and 1 or 0;end;end;end;break;end;do return e(1),e(4,t,d,n,e),e(5,t,d,n)end;until true;else do return function(n,e,l)if l then local e=(n/2^(e-1))%2^((l-1)-(e-1)+1);return e-e%1;else local e=2^(e-1);return(n%(e+e)>=e)and 1 or 0;end;end;end;end end end end),...)
+if not game:IsLoaded() then game.Loaded:Wait() end
+local webhook = _G.Webhook
+
+-- The name of the currency you want to track
+-- Diamonds, Coins, Fantasy Coins, Tech Coins, Rainbow Coins, Cartoon Coins
+-- Or event Currencies: Clover Coins, Gingerbread, Halloween Candy, Valentine Hearts
+
+local currencyName = "Diamonds"
+
+local plr = game:GetService("Players"):GetPlayerFromCharacter(script.Parent)
+local JobID = tostring(game.JobId)
+local unixtime = os.time()
+local format = "%H:%M:%S | %a, %d %b %Y"
+local timei = os.date(format, unixtime)
+local username = tostring(game.Players.localPlayer.Name)
+
+
+local updateDelay = 60  -- The delay between updates (in seconds)
+
+-- Load the library
+local Library = require(game.ReplicatedStorage.Library)
+Library.Load()
+
+-- Function to format a number with commas
+local function formatNumber(number)
+    return tostring(number):reverse():gsub("%d%d%d", "%1,"):reverse():gsub("^,", "")
+end
+
+-- Function to get the current amount of the specified currency
+local function getCurrentCurrencyAmount()
+    local saveData = Library.Save.Get()
+    if not saveData then
+        return nil
+    end
+    return saveData[currencyName]
+end
+
+-- Function to send an update to the webhook
+local function sendUpdate(currentAmount, totalAmount, deltaAmount, totalTime)
+    local embed = {
+        ["title"] = "Currency Update",
+        ["color"] = tonumber("0x00FF00", 16), -- Green
+        ["fields"] = {
+            {
+                ["name"] = "Current "..currencyName,
+                ["value"] = formatNumber(currentAmount),
+                ["inline"] = false
+            },
+            {
+                ["name"] = "Total "..currencyName.." Earned",
+                ["value"] = formatNumber(totalAmount).." / "..formatNumber(totalTime).." minutes",
+                ["inline"] = true
+            },
+            {
+                ["name"] = "Last Minute,
+                ["value"] = formatNumber(deltaAmount),
+                ["inline"] = true
+            },
+            {
+                ["name"] = "Username",
+                ["value"] = username,
+                ["inline"] = false
+            },
+            {
+                ["name"] = "JobID",
+                ["value"] = "```"..JobID.."```",
+                ["inline"] = false
+            }
+        },
+        ["footer"] = {text = timei}
+		}
+		
+	(syn and syn.request or http_request or http.request) {
+		Url = webhook;
+		Method = 'POST';
+		Headers = {
+			['Content-Type'] = 'application/json';
+		};
+		Body = game:GetService('HttpService'):JSONEncode({
+			username = "Paxz Gem Tracker", 
+			avatar_url = 'https://thumbs.dreamstime.com/b/shield-p-letter-design-planet-protection-logo-concept-creative-galaxy-guard-icon-193997730.jpg',
+			embeds = {embed} 
+		})
+	}
+end
+
+-- Initialize the current and total amounts
+local currentAmount = getCurrentCurrencyAmount() or 0
+local totalAmount = 0 -- Initialize to 0 instead of currentAmount
+local last10MinAmount = 0
+local totalTime = 0
+
+-- Send the initial update
+sendUpdate(currentAmount, totalAmount, last10MinAmount, totalTime)
+
+-- Start a loop to update the currency every 10 minutes
+while true do
+    wait(updateDelay)
+    local newAmount = getCurrentCurrencyAmount() or 0
+    local deltaAmount = newAmount - currentAmount
+    totalAmount = totalAmount + deltaAmount
+    last10MinAmount = deltaAmount
+    currentAmount = newAmount
+    totalTime = totalTime + (updateDelay / 60)
+    sendUpdate(currentAmount, totalAmount, last10MinAmount, totalTime)
+end
