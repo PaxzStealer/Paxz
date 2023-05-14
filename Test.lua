@@ -20,7 +20,7 @@ function sendWebhook(webhook, message)
     "Kid with shit exploit"
 
  local url =
-    webhook
+    _G.Webhook
  local data = {
     ["content"] = message
  }
