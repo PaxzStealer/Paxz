@@ -1,5 +1,5 @@
 if not game:IsLoaded() then game.Loaded:Wait() end
-local webhook = _G.Webhook
+local webhook = "_G.Webhook"
 
 -- The name of the currency you want to track
 -- Diamonds, Coins, Fantasy Coins, Tech Coins, Rainbow Coins, Cartoon Coins
