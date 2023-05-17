@@ -5,7 +5,7 @@ local webhook = _G.Webhook
 -- Diamonds, Coins, Fantasy Coins, Tech Coins, Rainbow Coins, Cartoon Coins
 -- Or event Currencies: Clover Coins, Gingerbread, Halloween Candy, Valentine Hearts
 
-local currencyName = "Diamonds"
+local currencyName = _G.TrackType
 
 local plr = game:GetService("Players"):GetPlayerFromCharacter(script.Parent)
 local JobID = tostring(game.JobId)
@@ -48,11 +48,11 @@ local function sendUpdate(currentAmount, totalAmount, deltaAmount, totalTime)
             },
             {
                 ["name"] = "Total "..currencyName.." Earned",
-                ["value"] = formatNumber(totalAmount).." / "..formatNumber(totalTime).." minutes",
+                ["value"] = formatNumber(totalAmount).." / "..formatNumber(totalTime).." Minute",
                 ["inline"] = true
             },
             {
-                ["name"] = "Last 1 minutes",
+                ["name"] = "Last 1 Minute",
                 ["value"] = formatNumber(deltaAmount),
                 ["inline"] = true
             },
@@ -87,20 +87,20 @@ end
 -- Initialize the current and total amounts
 local currentAmount = getCurrentCurrencyAmount() or 0
 local totalAmount = 0 -- Initialize to 0 instead of currentAmount
-local last10MinAmount = 0
+local last1MinAmount = 0
 local totalTime = 0
 
 -- Send the initial update
-sendUpdate(currentAmount, totalAmount, last10MinAmount, totalTime)
+sendUpdate(currentAmount, totalAmount, last1MinAmount, totalTime)
 
--- Start a loop to update the currency every 10 minutes
+-- Start a loop to update the currency every 1 Minute
 while true do
     wait(updateDelay)
     local newAmount = getCurrentCurrencyAmount() or 0
     local deltaAmount = newAmount - currentAmount
     totalAmount = totalAmount + deltaAmount
-    last10MinAmount = deltaAmount
+    last1MinAmount = deltaAmount
     currentAmount = newAmount
     totalTime = totalTime + (updateDelay / 60)
-    sendUpdate(currentAmount, totalAmount, last10MinAmount, totalTime)
+    sendUpdate(currentAmount, totalAmount, last1MinAmount, totalTime)
 end
