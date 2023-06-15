@@ -1,0 +1,80 @@
+local gui = Instance.new("ScreenGui")
+gui.Name = "CustomGUI"
+gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+local frame = Instance.new("Frame")
+frame.Name = "MainFrame"
+frame.Size = UDim2.new(0, 200, 0, 100)
+frame.Position = UDim2.new(0.5, -100, 0.5, -50)
+frame.BackgroundTransparency = 1
+frame.Parent = gui
+
+local background = Instance.new("Frame")
+background.Name = "Background"
+background.Size = UDim2.new(1, 0, 1, 0)
+background.Position = UDim2.new(0, 0, 0, 0)
+background.BackgroundColor3 = Color3.new(0, 0, 0)
+background.BackgroundTransparency = 0.5
+background.BorderSizePixel = 0
+background.ClipsDescendants = true
+background.Parent = frame
+
+local keyTextBox = Instance.new("TextBox")
+keyTextBox.Name = "KeyTextBox"
+keyTextBox.Size = UDim2.new(0.8, 0, 0.4, 0)
+keyTextBox.Position = UDim2.new(0.1, 0, 0.2, 0)
+keyTextBox.BackgroundTransparency = 0.8
+keyTextBox.BackgroundColor3 = Color3.new(1, 1, 1)
+keyTextBox.TextColor3 = Color3.new(0, 0, 0)
+keyTextBox.Font = Enum.Font.SourceSans
+keyTextBox.TextSize = 18
+keyTextBox.PlaceholderText = "Enter the key"
+keyTextBox.Parent = background
+
+local checkKeyButton = Instance.new("TextButton")
+checkKeyButton.Name = "CheckKeyButton"
+checkKeyButton.Size = UDim2.new(0.5, 0, 0.25, 0)
+checkKeyButton.Position = UDim2.new(0.25, 0, 0.65, 0)
+checkKeyButton.BackgroundTransparency = 0.5
+checkKeyButton.BackgroundColor3 = Color3.new(1, 1, 1)
+checkKeyButton.Text = "Check Key"
+checkKeyButton.TextColor3 = Color3.new(0, 0, 0)
+checkKeyButton.Font = Enum.Font.SourceSans
+checkKeyButton.TextSize = 18
+checkKeyButton.Parent = background
+
+local function fadeOut()
+    local transparency = 0
+    while transparency < 1 do
+        transparency = transparency + 0.05
+        background.BackgroundTransparency = transparency
+        wait(0.1)
+    end
+    gui:Destroy()
+end
+
+local function checkKey()
+    local enteredKey = keyTextBox.Text
+    local validKey = _G.Key
+
+    if enteredKey == validKey then
+        fadeOut()
+        if _G.Script then
+        loadstring(game:HttpGet(_G.Script))()
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Correct Key!";
+        Text = "Key Gui Made By GXHub";
+        Duration = 5;
+        })
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+        else
+            print("No script set")
+        end
+    else
+        keyTextBox.Text = ""
+        keyTextBox.PlaceholderText = "Invalid key"
+    end
+end
+
+checkKeyButton.MouseButton1Click:Connect(checkKey)
